@@ -1,0 +1,25 @@
+# Site settings
+title: FUKAIIT
+header-img: img/home-bg.jpg
+email: fukaiit@163.com
+copyright_name: FUKAIIT Blog / 
+description: ""
+baseurl:
+url: "http://fukaiit.github.io"
+# twitter_username: SBootstrap
+github_username:  fukaiit
+# facebook_username:  StartBootstrap
+email_username:  fukaiit@163.com
+
+# Google Analytics
+# To enable google analytics, uncomment below line with a valid Google Tracking ID
+# google_tracking_id:
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+
+plugins: [jekyll-paginate, jekyll-feed]
