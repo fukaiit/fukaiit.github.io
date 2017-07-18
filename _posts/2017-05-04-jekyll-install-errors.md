@@ -2,6 +2,8 @@
 layout:     post
 title:      "windows环境下安装jekyll相关问题汇总"
 date:       2017-05-06 21:20:06
+categories: [book] 
+tages:      [jekyll,error]
 header-img: "img/post-bg-04.jpg"
 ---
 

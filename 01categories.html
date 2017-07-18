@@ -1,8 +1,50 @@
 ---
-layout: page
+layout: categories
 title: "Categories"
 description: "Categories"
 header-img: "img/home-bg.jpg"
 ---
 
+{% for category in site.categories %}
+<h2 class="category_index_item">{{ category | first }}</h2>
+</span>{{ category | last | size }}</span>
+<ul class="arc-list">
+    {% for post in category.last %}
+        <div class="post-preview">
+		    <a href="{{ post.url | prepend: site.baseurl }}">
+		        <h2 class="post-title">
+		        	{{ post.title }}
+		        </h2>
+		        {% if post.subtitle %}
+		        <h3 class="post-subtitle">
+		            {{ post.subtitle }}
+		        </h3>
+		        {% endif %}
+		    </a>
+		    <p class="post-meta">Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}</p>
+		</div>
+		<hr>
+    {% endfor %}
+</ul>
+{% endfor %}
 
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function () {
+		$(".category_index").click(function(){
+			var $text=$(this).text();
+			var $items=$(".category_index_item");
+			var $item;
+
+			$.each($items,function (index,data) {
+				if ($(data).text()==$text) {
+					$item=$(data);
+				}
+			});
+
+			var scroll_offset = $item.offset(); 
+			$('body,html').animate({ scrollTop:scroll_offset.top }, 600);
+			return false;
+		});
+	});
+</script>

@@ -3,6 +3,8 @@ layout:     post
 title:      "jekyll文档"
 subtitle:   "本文包含jekyll的安装和基本语法，用于复制使用。对于Markdown和Liquid语法单独成文。"
 date:       2017-05-04 21:48:06
+categories: [movie]
+tages:      [jekyll,blog,site]
 header-img: "img/post-bg-03.jpg"
 ---
 

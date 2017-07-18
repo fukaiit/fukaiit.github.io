@@ -1,0 +1,20 @@
+<!-- scorlltop -->
+<img id="scrolltop-img" src="/img/scrolltop.png" style="width: 36px; height: 36px;position: fixed; right: 36px; bottom: 118px;">
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#scrolltop-img").hide();
+        $(window).scroll(function(event){
+            if ($(window).scrollTop()>200) {
+                $("#scrolltop-img").show(600);
+            }
+            else{
+                $("#scrolltop-img").hide(600);
+            }
+        });
+        $("#scrolltop-img").click(function(){
+            $('body,html').animate({ scrollTop:0 }, 600);
+            return false;
+        });
+    });
+</script>
