@@ -11,9 +11,11 @@ layout: default
                     <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
                     <hr class="small">
                     <span class="subheading">
+
                         {% for category in site.categories %}
-                        <h2 class="category_index">{{ category | first }}</h2>
-                        </span>{{ category | last | size }}</span>
+                            <button class="btn btn-default category_index" type="button">
+                              <span class="cate">{{ category | first }}</span> <span class="badge">{{ category | last | size }}</span>
+                            </button> 
                         {% endfor %}
                     </span>
                 </div>
@@ -25,7 +27,7 @@ layout: default
 <!-- Main Content -->
 <div class="container">
 	<div class="row">
-		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+		<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
 			{{ content }}
 		</div>
 	</div>

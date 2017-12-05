@@ -2,10 +2,10 @@
 layout:     post
 title:      "Markdown基本语法与示例"
 subtitle:   "Markdown 是一种轻量级的「标记语言」，语法十分简单，常用标记符号不超过十个，一旦熟悉这种语法规则，会有一劳永逸的效果。"
-date:       2017-05-03 12:00:00
+date:       2017-12-04 21:00:00
 categories: [code]
-tages:      [markdown]
-header-img: "img/post-bg-01.jpg"
+tags:      [markdown]
+header-img: "img/article-bg.jpg"
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~. [Links](https://github.com) should be blue with no underlines (unless hovered over).

@@ -1,10 +1,10 @@
 ---
 layout:     post
 title:      "windows环境下安装jekyll相关问题汇总"
-date:       2017-05-06 21:20:06
-categories: [book] 
-tages:      [jekyll,error]
-header-img: "img/post-bg-04.jpg"
+date:       2017-12-04 20:30:00
+categories: [code] 
+tags:       [jekyll,error]
+header-img: "img/article-bg.jpg"
 ---
 
 ### 错误1：执行`gem install jekyll`时证书错误。

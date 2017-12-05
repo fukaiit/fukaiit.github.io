@@ -10,7 +10,14 @@ layout: default
                 <div class="site-heading">
                     <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
                     <hr class="small">
-                    <span class="subheading">{{ page.description }}</span>
+                    <span class="subheading">
+
+                        {% for tag in site.tags %}
+                            <button class="btn btn-default category_index" type="button">
+                              <span class="cate">{{ tag | first }}</span> <span class="badge">{{ tag | last | size }}</span>
+                            </button>
+                        {% endfor %}
+                    </span>
                 </div>
             </div>
         </div>

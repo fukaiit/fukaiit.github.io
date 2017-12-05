@@ -2,10 +2,10 @@
 layout:     post
 title:      "jekyll文档"
 subtitle:   "本文包含jekyll的安装和基本语法，用于复制使用。对于Markdown和Liquid语法单独成文。"
-date:       2017-05-04 21:48:06
-categories: [movie]
-tages:      [jekyll,blog,site]
-header-img: "img/post-bg-03.jpg"
+date:       2017-12-04 20:00:00
+categories: [code] 
+tags:       [jekyll]
+header-img: "img/article-bg.jpg"
 ---
 
 ![jekyll]({{ site.url }}/assets/images/jekyll-logo.jpg)
@@ -30,24 +30,18 @@ header-img: "img/post-bg-03.jpg"
 	gems:        []
 	timezone:    nil
 	encoding:    nil
-	
 	future:      true
 	show_drafts: nil
 	limit_posts: 0
 	highlighter: pygments
-	
 	relative_permalinks: true
-	
 	permalink:     date
 	paginate_path: 'page:num'
 	paginate:      nil
-	
 	markdown:      maruku
 	markdown_ext:  markdown,mkd,mkdn,md
 	textile_ext:   textile
-	
 	excerpt_separator: "\n\n"
-	
 	safe:        false
 	watch:       false    # deprecated
 	server:      false    # deprecated
@@ -56,7 +50,6 @@ header-img: "img/post-bg-03.jpg"
 	baseurl:     /
 	url:         http://localhost:4000
 	lsi:         false
-	
 	maruku:
 	  use_tex:    false
 	  use_divs:   false
@@ -64,13 +57,10 @@ header-img: "img/post-bg-03.jpg"
 	  png_dir:    images/latex
 	  png_url:    /images/latex
 	  fenced_code_blocks: true
-	
 	rdiscount:
 	  extensions: []
-	
 	redcarpet:
 	  extensions: []
-	
 	kramdown:
 	  auto_ids: true
 	  footnote_nr: 1
@@ -78,7 +68,6 @@ header-img: "img/post-bg-03.jpg"
 	  toc_levels: 1..6
 	  smart_quotes: lsquo,rsquo,ldquo,rdquo
 	  use_coderay: false
-	
 	  coderay:
 	    coderay_wrap: div
 	    coderay_line_numbers: inline
@@ -86,7 +75,6 @@ header-img: "img/post-bg-03.jpg"
 	    coderay_tab_width: 4
 	    coderay_bold_every: 10
 	    coderay_css: style
-	
 	redcloth:
 	  hard_breaks: true
 	```

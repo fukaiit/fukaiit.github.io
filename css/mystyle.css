@@ -1,0 +1,19 @@
+.category_index{
+    padding: 6px 12px;
+}
+
+.category_index_item{
+    text-align: center;
+    border-bottom: 2px solid #0085a1;
+}
+
+.category_index_item span{
+    display: inline-block;
+    padding:8px 20px;
+    color: #FFF;
+    background-color: #0085a1;
+}
+
+ul.arc-list{
+    padding-left: 0;
+}
